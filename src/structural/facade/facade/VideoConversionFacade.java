@@ -1,6 +1,5 @@
 package structural.facade.facade;
 
-import structural.facade.example.some_complex_media_library.*;
 import structural.facade.some_complex_media_library.*;
 
 import java.io.File;

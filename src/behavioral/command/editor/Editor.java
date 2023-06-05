@@ -1,7 +1,6 @@
 package behavioral.command.editor;
 
 import behavioral.command.commands.*;
-import behavioral.command.example.commands.*;
 
 import javax.swing.*;
 import java.awt.*;

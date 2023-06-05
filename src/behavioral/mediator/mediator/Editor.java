@@ -3,7 +3,6 @@ package behavioral.mediator.mediator;
 import behavioral.mediator.components.*;
 import behavioral.mediator.components.Component;
 import behavioral.mediator.components.List;
-import behavioral.mediator.example.components.*;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;

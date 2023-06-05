@@ -1,7 +1,6 @@
 package behavioral.mediator;
 
 import behavioral.mediator.components.*;
-import behavioral.mediator.example.components.*;
 import behavioral.mediator.mediator.Editor;
 import behavioral.mediator.mediator.Mediator;
 

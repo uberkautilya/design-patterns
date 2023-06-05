@@ -1,7 +1,6 @@
 package structural.decorator;
 
 import structural.decorator.decorators.*;
-import structural.decorator.example.decorators.*;
 
 public class Demo {
     public static void main(String[] args) {

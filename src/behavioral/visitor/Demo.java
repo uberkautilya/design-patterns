@@ -1,6 +1,5 @@
 package behavioral.visitor;
 
-import behavioral.visitor.example.shapes.*;
 import behavioral.visitor.shapes.*;
 import behavioral.visitor.visitor.XMLExportVisitor;
 

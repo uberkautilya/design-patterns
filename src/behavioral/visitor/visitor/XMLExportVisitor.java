@@ -1,6 +1,5 @@
 package behavioral.visitor.visitor;
 
-import behavioral.visitor.example.shapes.*;
 import behavioral.visitor.shapes.*;
 
 public class XMLExportVisitor implements Visitor {
