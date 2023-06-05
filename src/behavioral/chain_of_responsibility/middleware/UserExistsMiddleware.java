@@ -13,6 +13,7 @@ public class UserExistsMiddleware extends Middleware {
     }
 
     public boolean check(String email, String password) {
+        System.out.println("UserExistsMiddleware check()");
         if (!server.hasEmail(email)) {
             System.out.println("This email is not registered!");
             return false;

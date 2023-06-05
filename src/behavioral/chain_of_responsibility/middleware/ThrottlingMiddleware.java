@@ -22,6 +22,7 @@ public class ThrottlingMiddleware extends Middleware {
      * checks by running its check after all other checks.
      */
     public boolean check(String email, String password) {
+        System.out.println("ThrottlingMiddleware check()");
         if (System.currentTimeMillis() > currentTime + 60_000) {
             request = 0;
             currentTime = System.currentTimeMillis();

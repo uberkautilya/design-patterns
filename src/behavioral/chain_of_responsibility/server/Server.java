@@ -26,7 +26,7 @@ public class Server {
      */
     public boolean logIn(String email, String password) {
         if (middleware.check(email, password)) {
-            System.out.println("Authorization have been successful!");
+            System.out.println("Authorization was successful!");
 
             // Do something useful here for authorized users.
 
