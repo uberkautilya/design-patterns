@@ -6,22 +6,18 @@ import behavioral.iterator.profile.Profile;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Facebook implements SocialNetwork {
     private List<Profile> profiles;
 
     public Facebook(List<Profile> cache) {
-        if (cache != null) {
-            this.profiles = cache;
-        } else {
-            this.profiles = new ArrayList<>();
-        }
+        this.profiles = Objects.requireNonNullElseGet(cache, ArrayList::new);
     }
 
     public Profile requestProfileFromFacebook(String profileEmail) {
         // Here would be a POST request to one of the Facebook API endpoints.
-        // Instead, we emulates long network connection, which you would expect
-        // in the real life...
+        // Instead, we emulates long network connection, which you would expect in the real life...
         simulateNetworkLatency();
         System.out.println("Facebook: Loading profile '" + profileEmail + "' over the network...");
 
@@ -31,8 +27,7 @@ public class Facebook implements SocialNetwork {
 
     public List<String> requestProfileFriendsFromFacebook(String profileEmail, String contactType) {
         // Here would be a POST request to one of the Facebook API endpoints.
-        // Instead, we emulates long network connection, which you would expect
-        // in the real life...
+        // Instead, we emulates long network connection, which you would expect in the real life...
         simulateNetworkLatency();
         System.out.println("Facebook: Loading '" + contactType + "' list of '" + profileEmail + "' over the network...");
 
